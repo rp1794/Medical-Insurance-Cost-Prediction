@@ -97,7 +97,7 @@ Accuracy : 44.72 %
 ## Installation
 
 ### Clone the Repository
-git clone https://github.com/your-username/Medical-Insurance-Cost-Prediction.git
+git clone https://github.com/rp1794/Medical-Insurance-Cost-Prediction.git
 
 
 ### Install Required Libraries
