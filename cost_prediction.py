@@ -62,22 +62,22 @@ df.drop("region", axis=1, inplace=True)
 # ----------------------------------------Handle outlier-----------------------------------------------
 
 
-def handle_outlier(series):
-    q1 = series.quantile(0.25)
-    q3 = series.quantile(0.75)
-    iqr = q3 - q1
-    lower = q1 - 1.5 * iqr
-    upper = q3 + 1.5 * iqr
+# def handle_outlier(series):
+#     q1 = series.quantile(0.25)
+#     q3 = series.quantile(0.75)
+#     iqr = q3 - q1
+#     lower = q1 - 1.5 * iqr
+#     upper = q3 + 1.5 * iqr
 
-    return series.clip(lower, upper)
+#     return series.clip(lower, upper)
 
 
 # print(df["bmi"].describe())
-df["bmi"] = handle_outlier(df["bmi"])
+# df["bmi"] = handle_outlier(df["bmi"])
 # print(df["bmi"].describe())
 
 # print(df["age"].describe())
-df["age"] = handle_outlier(df["age"])
+# df["age"] = handle_outlier(df["age"])
 # print(df["age"].describe())
 
 # ---------------------------------------Split dataset ----------------------------------------------
